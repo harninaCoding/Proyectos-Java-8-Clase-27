@@ -1,0 +1,15 @@
+package teoriainterfazfuncional00;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class ACtionFunctionalPArametrized06Test {
+
+	@Test
+	void test() {
+	ACtionFunctionalPArametrized06<Integer,String> action;
+	action=(source)->{return source.length()+7;};
+	}
+
+}
