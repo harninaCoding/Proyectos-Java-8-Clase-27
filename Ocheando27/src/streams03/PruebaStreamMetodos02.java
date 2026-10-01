@@ -1,0 +1,56 @@
+package streams03;
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Stream;
+
+public class PruebaStreamMetodos02 {
+	public static void main(String[] args) {
+		String cosas[] = { "periplo", "nocturno", "cempuo" };
+		List<String> cadenas = Arrays.asList(cosas);
+		// Que metodos tenemos
+		Stream<String> stream = cadenas.stream();
+		// metodos que retornan un stream, o sea, que pueden ir en pipeline
+		// quita los elementos iguales
+//		stream.distinct();
+		//corta la cantidad de elementos
+//		stream.limit(2).forEach((element)->System.out.println(element));
+		 // salta los n primeros elementos
+//        stream.skip(1).forEach((element)->System.out.println(element));
+		 // hay algunos mas
+        //Ahora vamos a ver metodos que neceitan una lambda para funcionar
+        //Estos necesitan un 
+		// Predicate
+//		 System.out.println(stream.allMatch(element->element.endsWith("o")));
+//		 System.out.println(stream.anyMatch(a-> a.startsWith("z")));
+//		stream.noneMatch();
+		//necesita orden en el flujo
+//		 stream.dropWhile(a->a.startsWith("n")).forEach(System.out::println);;
+//		stream.takeWhile(a->a.startsWith("n"));
+		//no necesita ordfen en el flujo
+//		stream.filter(a->a.charAt(1)=='e').forEach(System.out::println);
+		//Necesitan un Consumer
+//		stream.forEach(null);
+//		stream.peek(System.out::println);
+		  // Estos necesitan un Supplier
+//        stream.collect(Collectors.toList());
+		 // Estos una funcion
+//        stream.map();
+//        stream.flatMap();
+//        stream.flatMapToDouble();
+//        stream.flatMapToInt();
+//        stream.flatMapToLong();
+//        stream.mapToDouble();
+//        stream.mapToInt((element)->{return element.length();});
+//        stream.mapToLong();
+		 // Las que necesitan un comparador
+//        stream.max();
+//        stream.min();
+//        stream.sorted();
+		// METODOS QUE NO RETORNAN UN STREAM
+//        // que retorna  optional
+//        stream.findFirst();
+        //cuenta los elementos
+//        stream.count();
+	}
+}

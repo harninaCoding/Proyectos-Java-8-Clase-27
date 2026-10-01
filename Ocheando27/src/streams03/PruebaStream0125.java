@@ -1,0 +1,19 @@
+package streams03;
+
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class PruebaStream0125 {
+
+	public static void main(String[] args) {
+		List<String> cadenas=List.of("periplo", "nocturno", "cempua","periplo");
+		List<String> collect = cadenas.stream().distinct().collect(Collectors.toList());
+		collect.forEach(System.out::println);
+		cadenas.stream()
+				.map((String cadena)->{return cadena.toUpperCase();})
+				.distinct()
+				.collect(Collectors.toList())
+			.forEach((elemento)->{System.out.println(elemento);});
+	}
+
+}

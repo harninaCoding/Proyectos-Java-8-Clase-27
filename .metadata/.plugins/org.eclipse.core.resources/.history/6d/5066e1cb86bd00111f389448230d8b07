@@ -1,0 +1,13 @@
+package streams03;
+
+public class PruebaStringStream00 {
+
+	public static void main(String[] args) {
+		 //Supongamos que tenemos un String
+        String cadena = new String("      Molto Cadencioso");
+        //Podemos aplicar un metodo que trabaje sobre el y devuelva otro String
+        String cadena2 = cadena.toUpperCase();
+        System.out.println(cadena2);
+	}
+
+}

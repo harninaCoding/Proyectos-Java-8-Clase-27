@@ -1,0 +1,39 @@
+package optional02;
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.Optional;
+
+
+public class SolcuionEjercicio01 {
+	// No tiene nada que ver con optional
+	public static void main(String[] args) {
+		Optional<Integer> primerRepetido = new SolcuionEjercicio01()
+				.getPrimerRepetido(Arrays.asList(3, 4, 5, 6, 7));
+		//tres formas de hacer lo mismo
+		System.out.println(primerRepetido.toString());
+		primerRepetido.ifPresent((numerito)->System.out.println(numerito));
+		primerRepetido.ifPresent(System.out::println);
+	}
+
+	//Si vabe la posibilidad de ser null se retorna Optional
+	public Optional<Integer> getPrimerRepetido(List<Integer> collect3) {
+		Integer retorno=null;
+		int primerRepetido =0;
+		boolean encontrado = false;
+		for (int i = 0; i < collect3.size() - 1 && !encontrado; i++) {
+			int contador = 0;
+			for (int j = i + 1; j < collect3.size(); j++) {
+				if (collect3.get(i) == collect3.get(j)) {
+					contador++;
+				}
+			}
+			if (contador >= 1) {
+				primerRepetido = collect3.get(i);
+				encontrado = true;
+				retorno=primerRepetido;
+			}
+		}
+		return Optional.ofNullable(retorno);
+	}
+}

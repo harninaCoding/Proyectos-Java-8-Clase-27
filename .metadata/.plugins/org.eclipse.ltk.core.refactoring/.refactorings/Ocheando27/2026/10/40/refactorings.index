@@ -1,0 +1,7 @@
+1790850709381	Extract local variable 'primerRepetido'
+1790850747081	Copy compilation unit
+1790852936953	Extract local variable 'stream'
+1790853903504	Extract local variable 'map'
+1790854378603	Rename type 'PruebaStream125'
+1790854400606	Rename type 'PruebaStreams01'
+1790854585624	Extract local variable 'collect'
