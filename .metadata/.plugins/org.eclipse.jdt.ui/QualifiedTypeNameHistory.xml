@@ -3,4 +3,6 @@
     <fullyQualifiedTypeName name="teoriainterfazfuncional00.ActionDefault02"/>
     <fullyQualifiedTypeName name="teoriainterfazfuncional00.ACtionFunctionalPArametrized06"/>
     <fullyQualifiedTypeName name="teoriainterfazfuncional00.Converter"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.util.stream.Collectors"/>
 </qualifiedTypeNameHistroy>

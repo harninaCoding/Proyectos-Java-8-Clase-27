@@ -2,12 +2,11 @@ package streams03;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class PruebaStreamMetodos02 {
 	public static void main(String[] args) {
-		String cosas[] = { "pepino","periplo", "nocturno", "cempuo" };
+		String cosas[] = { "periplo", "nocturno", "cempuo" };
 		List<String> cadenas = Arrays.asList(cosas);
 		// Que metodos tenemos
 		Stream<String> stream = cadenas.stream();
@@ -25,20 +24,14 @@ public class PruebaStreamMetodos02 {
 //		 System.out.println(stream.allMatch(element->element.endsWith("o")));
 //		 System.out.println(stream.anyMatch(a-> a.startsWith("z")));
 //		stream.noneMatch();
-		//necesita orden en el flujo 
-		//mientras se encuentra elementos que empiecen por p, los quita del resultado.
-//		 stream.dropWhile(a->a.startsWith("p")).forEach(System.out::println);
-		//mientras se encuentra elementos que empiecen por p, los incluye en el resultado.
-		//hace lo mismo que filter, pero este deja de recorrer el stream en la primera no ocurrencia de la condicion
-//		stream.takeWhile(a->a.startsWith("p")).forEach(System.out::println);
+		//necesita orden en el flujo
+		 stream.dropWhile(a->a.startsWith("p")).forEach(System.out::println);;
+//		stream.takeWhile(a->a.startsWith("n"));
 		//no necesita ordfen en el flujo
 //		stream.filter(a->a.charAt(1)=='e').forEach(System.out::println);
 		//Necesitan un Consumer
 //		stream.forEach(null);
-		//peek es para hacer una accion sin modificar el stream. por si solo no hace nada
-		//necesita que el stream siga fluyendo
 //		stream.peek(System.out::println);
-//		stream.peek(System.out::println).map(a->a.toUpperCase()).collect(Collectors.toList()).forEach(System.out::println);;
 		  // Estos necesitan un Supplier
 //        stream.collect(Collectors.toList());
 		 // Estos una funcion

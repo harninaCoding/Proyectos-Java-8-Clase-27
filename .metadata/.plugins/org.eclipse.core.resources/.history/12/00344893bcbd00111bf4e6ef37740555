@@ -37,8 +37,7 @@ public class PruebaStreamMetodos02 {
 //		stream.forEach(null);
 		//peek es para hacer una accion sin modificar el stream. por si solo no hace nada
 		//necesita que el stream siga fluyendo
-//		stream.peek(System.out::println);
-//		stream.peek(System.out::println).map(a->a.toUpperCase()).collect(Collectors.toList()).forEach(System.out::println);;
+		stream.peek(System.out::println).map(a->a.toUpperCase()).collect(Collectors.toList()).forEach(System.out::println);;
 		  // Estos necesitan un Supplier
 //        stream.collect(Collectors.toList());
 		 // Estos una funcion
