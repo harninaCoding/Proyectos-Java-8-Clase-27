@@ -1,2 +1,5 @@
 1791357357530	Extract local variable 'distinct'
 1791359147373	Extract local variable 'randomValues'
+1791365812502	Extract local variable 'iterator'
+1791365896387	Extract local variable 'next'
+1791367600735	Extract local variable 'alteraCollecion'

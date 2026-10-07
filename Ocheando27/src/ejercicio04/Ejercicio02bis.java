@@ -6,7 +6,7 @@ import java.util.function.Function;
 import java.util.stream.Collectors;
 
 public class Ejercicio02bis {
-	ArrayList<Vehiculo> vehiculos = new ArrayList<>();
+	public ArrayList<Vehiculo> vehiculos = new ArrayList<>();
 
 	// Duplica los kilometros mapeando
 	public Ejercicio02bis() {
@@ -23,8 +23,24 @@ public class Ejercicio02bis {
 	}
 
 	public List<Vehiculo> alteraCollecion() {
-		//TODO
-		//Duplicar los kilometros a todos los vehiculos. con stream
-		return null;
+		return vehiculos.stream()
+				.map((a) -> {
+					a.setKilometros(a.getKilometros()*2);
+					return a;
+				})
+				.collect(Collectors.toList());
+
 	}
+	public List<Vehiculo> sinAlteraCollecion() {
+		return vehiculos.stream()
+				.filter(a->!a.getModelo().equals(Modelo.BMW))
+				.map((a) -> {
+					Vehiculo copia= new Vehiculo(a);
+					copia.setKilometros(a.getKilometros()*2);
+					return copia;
+				})
+				.collect(Collectors.toList());
+		
+	}
+	
 }

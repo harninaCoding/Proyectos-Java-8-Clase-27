@@ -1,7 +1,12 @@
 package ejercicio04;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Set;
+import java.util.stream.Collectors;
 
 public class Ejercicio02 {
 	/*
@@ -13,15 +18,26 @@ public class Ejercicio02 {
 	 * iterador y un bucle for mejorado.
 	 */
 	public List<String> omitirRepetidosConvencional(List<String> lista) {
-		//TODO
-		return lista;
+		Set<String> set=new HashSet<String>();
+		for (String string : lista) {
+			set.add(string);
+		}
+		return new ArrayList<String>(set);
 	}
-	private List<String> getListQQ() {
+	
+	public List<String> omitirRepetidosDeclarativa(List<String> lista) {
+		return lista.stream().distinct().collect(Collectors.toList());
+	}
+	
+	public List<String> getListQQ() {
 		String[] strs = { "12345", "67891", "12347809933", "98765432102", "67891", "12347809933" };
 		LinkedList<String> al = new LinkedList<String>();
 		for (int i = 0; i < strs.length; i++) {
 			al.add(strs[i]);
 		}
 		return al;
+	}
+	private List<String> getListQQNose() {
+		return Arrays.asList(new String[]{ "12345", "67891", "12347809933", "98765432102", "67891", "12347809933" });
 	}
 }
