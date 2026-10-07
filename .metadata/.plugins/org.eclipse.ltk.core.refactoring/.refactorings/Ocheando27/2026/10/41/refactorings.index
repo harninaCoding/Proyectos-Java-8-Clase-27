@@ -3,3 +3,5 @@
 1791365812502	Extract local variable 'iterator'
 1791365896387	Extract local variable 'next'
 1791367600735	Extract local variable 'alteraCollecion'
+1791390089529	Delete elements
+1791390096329	Delete element
