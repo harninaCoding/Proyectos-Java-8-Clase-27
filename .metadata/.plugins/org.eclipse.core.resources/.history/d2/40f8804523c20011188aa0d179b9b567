@@ -1,0 +1,18 @@
+package ejercicio04;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import java.util.List;
+
+import org.junit.jupiter.api.Test;
+
+class Ejercicio01Test {
+
+	@Test
+	void testGetRandomValues() {
+		Ejercicio01 instancia=new Ejercicio01();
+		List<Integer> randomValues = instancia.getRandomValues(1, 10,5);
+		System.out.println();
+	}
+
+}

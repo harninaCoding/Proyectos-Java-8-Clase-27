@@ -1,0 +1,19 @@
+package ejercicio04;
+
+import java.util.List;
+
+import org.junit.jupiter.api.Test;
+
+class Ejercicio01Test {
+
+	@Test
+	void testGetRandomValues() {
+		Ejercicio01 instancia = new Ejercicio01();
+		List<Integer> randomValues = instancia.getRandomValuesImperativa(1, 10, 5);
+		randomValues.forEach(System.out::print);
+		System.out.println();
+		randomValues = instancia.getRandomValuesDeclarativa(1, 10, 5);
+		randomValues.forEach(System.out::print);
+	}
+
+}

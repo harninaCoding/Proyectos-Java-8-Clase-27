@@ -11,7 +11,6 @@ public class PruebaStreamMetodos02 {
 		List<String> cadenas = Arrays.asList(cosas);
 		// Que metodos tenemos
 		Stream<String> stream = cadenas.stream();
-//		cadenas.forEach(null);
 		// metodos que retornan un stream, o sea, que pueden ir en pipeline
 		// quita los elementos iguales
 //		Stream<String> distinct = stream.distinct();
@@ -32,7 +31,7 @@ public class PruebaStreamMetodos02 {
 //		stream.noneMatch();
 		//necesita orden en el flujo 
 		//mientras se encuentra elementos que empiecen por p, los quita del resultado.
-//		 stream.dropWhile(a->a.startsWith("p")).forEach(System.out::println);
+		 stream.dropWhile(a->a.startsWith("p")).forEach(System.out::println);
 		//mientras se encuentra elementos que empiecen por p, los incluye en el resultado.
 		//hace lo mismo que filter, pero este deja de recorrer el stream en la primera no ocurrencia de la condicion
 //		stream.takeWhile(a->a.startsWith("p")).forEach(System.out::println);
@@ -43,10 +42,7 @@ public class PruebaStreamMetodos02 {
 		//peek es para hacer una accion sin modificar el stream. por si solo no hace nada
 		//necesita que el stream siga fluyendo
 //		stream.peek(System.out::println);
-//		stream.peek(System.out::println)
-//			.map(a->a.toUpperCase())
-//			.collect(Collectors.toList())
-//			.forEach(System.out::println);
+//		stream.peek(System.out::println).map(a->a.toUpperCase()).collect(Collectors.toList()).forEach(System.out::println);;
 		  // Estos necesitan un Supplier
 //        stream.collect(Collectors.toList());
 		 // Estos una funcion
@@ -56,9 +52,9 @@ public class PruebaStreamMetodos02 {
 //        stream.flatMapToInt();
 //        stream.flatMapToLong();
 //        stream.mapToDouble();
-//        stream.mapToInt(element->element.length());
+//        stream.mapToInt((element)->{return element.length();});
 //        stream.mapToLong();
-//		  Las que necesitan un comparador
+		 // Las que necesitan un comparador
 //        stream.max();
 //        stream.min();
 //        stream.sorted();

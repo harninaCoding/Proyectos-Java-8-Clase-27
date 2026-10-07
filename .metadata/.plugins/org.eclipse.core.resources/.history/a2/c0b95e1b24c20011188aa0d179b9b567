@@ -1,0 +1,18 @@
+package ejercicio04;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
+
+public class Ejercicio01 {
+//	1. Genere 10 números aleatorios que van del 1 al 100
+//	y colóquelos en una coleccion. 
+	public List<Integer> getRandomValues(int min,int max,int amount){
+		ArrayList<Integer> lista=new ArrayList<Integer>();
+		Random aleatorio=new Random();
+		for (int i = 0; i < amount; i++) {
+			lista.add(aleatorio.nextInt(min, max));
+		}
+		return lista;
+	}
+}

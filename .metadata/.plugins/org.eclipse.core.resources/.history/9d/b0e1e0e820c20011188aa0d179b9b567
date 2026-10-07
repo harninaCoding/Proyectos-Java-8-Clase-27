@@ -7,11 +7,10 @@ import java.util.stream.Stream;
 
 public class PruebaStreamMetodos02 {
 	public static void main(String[] args) {
-		String cosas[] = { "pepino","periplo", "nocturno", "cempuo","pepino" };
+		String cosas[] = { "pepino","peripla", "nocturno", "cempuo","pepino" };
 		List<String> cadenas = Arrays.asList(cosas);
 		// Que metodos tenemos
 		Stream<String> stream = cadenas.stream();
-//		cadenas.forEach(null);
 		// metodos que retornan un stream, o sea, que pueden ir en pipeline
 		// quita los elementos iguales
 //		Stream<String> distinct = stream.distinct();
@@ -27,7 +26,7 @@ public class PruebaStreamMetodos02 {
         //Ahora vamos a ver metodos que neceitan una lambda para funcionar
         //Estos necesitan un 
 		// Predicate
-//	 System.out.println(stream.allMatch(element->element.endsWith("o")));
+	 System.out.println(stream.allMatch(element->element.endsWith("o")));
 //		 System.out.println(stream.anyMatch(a-> a.startsWith("z")));
 //		stream.noneMatch();
 		//necesita orden en el flujo 
@@ -43,10 +42,7 @@ public class PruebaStreamMetodos02 {
 		//peek es para hacer una accion sin modificar el stream. por si solo no hace nada
 		//necesita que el stream siga fluyendo
 //		stream.peek(System.out::println);
-//		stream.peek(System.out::println)
-//			.map(a->a.toUpperCase())
-//			.collect(Collectors.toList())
-//			.forEach(System.out::println);
+//		stream.peek(System.out::println).map(a->a.toUpperCase()).collect(Collectors.toList()).forEach(System.out::println);;
 		  // Estos necesitan un Supplier
 //        stream.collect(Collectors.toList());
 		 // Estos una funcion
@@ -56,9 +52,9 @@ public class PruebaStreamMetodos02 {
 //        stream.flatMapToInt();
 //        stream.flatMapToLong();
 //        stream.mapToDouble();
-//        stream.mapToInt(element->element.length());
+//        stream.mapToInt((element)->{return element.length();});
 //        stream.mapToLong();
-//		  Las que necesitan un comparador
+		 // Las que necesitan un comparador
 //        stream.max();
 //        stream.min();
 //        stream.sorted();
