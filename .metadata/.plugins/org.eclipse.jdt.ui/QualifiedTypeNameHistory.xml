@@ -2,7 +2,6 @@
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="teoriainterfazfuncional00.ActionDefault02"/>
     <fullyQualifiedTypeName name="teoriainterfazfuncional00.ACtionFunctionalPArametrized06"/>
-    <fullyQualifiedTypeName name="teoriainterfazfuncional00.Converter"/>
     <fullyQualifiedTypeName name="java.lang.Integer"/>
     <fullyQualifiedTypeName name="ejercicio04.Ejercicio01"/>
     <fullyQualifiedTypeName name="java.util.Random"/>
@@ -13,4 +12,6 @@
     <fullyQualifiedTypeName name="java.util.stream.Collectors"/>
     <fullyQualifiedTypeName name="ejercicio04.Ejercicio02bis"/>
     <fullyQualifiedTypeName name="ejercicio04.Vehiculo"/>
+    <fullyQualifiedTypeName name="teoriainterfazfuncional00.Converter"/>
+    <fullyQualifiedTypeName name="teoriainterfazfuncional00.Something"/>
 </qualifiedTypeNameHistroy>

@@ -4,18 +4,18 @@ package teoriainterfazfuncional00;
 //no estaticas
 public class PruebaReferencialMethodsObjects10 {
     public static void main(String[] args) {
-        Something something = new Something();
+        Something otherthing = new Something();
         //pasando por referencia u nmetodo de objeto
         
-        Converter<String, String>  converter = something::startsWith;
+        Converter<String, String>  converter = otherthing::startsWith;
         converter=s->{
-        	return something.startsWith(s);
+        	return otherthing.startsWith(s);
         };
         converter=new Converter<String, String>() {
 			
 			@Override
 			public String convert(String f) {
-				return something.startsWith(f);
+				return otherthing.startsWith(f);
 	        };
 		};
         String converted = converter.convert("Java");

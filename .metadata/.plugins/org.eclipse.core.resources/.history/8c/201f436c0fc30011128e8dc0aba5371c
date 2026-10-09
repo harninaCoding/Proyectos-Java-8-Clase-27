@@ -15,8 +15,7 @@ public class AlumnosOM {
 
 	public static List<Alumno> getAlumnos() {
 		return IntStream.range(0, nombres.length).mapToObj(
-				index -> new Alumno(Arrays.stream(notas[index]).boxed().collect(Collectors.toList()), 
-						nombres[index]))
+				index -> new Alumno(Arrays.stream(notas[index]).boxed().collect(Collectors.toList()), nombres[index]))
 				.collect(Collectors.toList());
 	}
 }

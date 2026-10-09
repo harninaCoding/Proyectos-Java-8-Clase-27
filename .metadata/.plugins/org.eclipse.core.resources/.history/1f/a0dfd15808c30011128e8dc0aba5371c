@@ -12,10 +12,6 @@ public class Vehiculo {
 	        this.kilometros = kilometros;
 	    }
 	 
-	    public Vehiculo duplicarKilometros(Vehiculo a) {
-	    	a.setKilometros(a.getKilometros()*2);
-			return a;
-	    }
 	    public Vehiculo(Vehiculo t) {
 			this(t.matricula,t.modelo,t.kilometros);
 		}

@@ -13,13 +13,14 @@ class PruebaLmbda05 {
 	void test() {
 		List<String> names = Arrays.asList("peter", "anna", "mike", "xenia");
 		System.out.println(names.toString());
-		Collections.sort(names, new Comparator<String>() {
+		Comparator<String> c = new Comparator<String>() {
 
 			@Override
 			public int compare(String o1, String o2) {
 				return o2.compareTo(o1);
 			}
-		});
+		};
+		Collections.sort(names, c);
 		Collections.sort(names,(o1,o2)->{return o2.compareTo(o1);});
 	}
 

@@ -12,7 +12,7 @@ public class Vehiculo {
 	        this.kilometros = kilometros;
 	    }
 	 
-	    public Vehiculo duplicarKilometros(Vehiculo a) {
+	    public Vehiculo duplicarKilometos(Vehiculo a) {
 	    	a.setKilometros(a.getKilometros()*2);
 			return a;
 	    }
