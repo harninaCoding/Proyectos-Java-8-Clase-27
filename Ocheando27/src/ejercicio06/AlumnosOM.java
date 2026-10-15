@@ -1,5 +1,6 @@
 package ejercicio06;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -15,7 +16,9 @@ public class AlumnosOM {
 
 	public static List<Alumno> getAlumnos() {
 		return IntStream.range(0, nombres.length).mapToObj(
-				index -> new Alumno(Arrays.stream(notas[index]).boxed().collect(Collectors.toList()), 
+				index -> new Alumno(
+						Arrays.stream(notas[index]).boxed()
+						.collect(Collectors.toList()), 
 						nombres[index]))
 				.collect(Collectors.toList());
 	}

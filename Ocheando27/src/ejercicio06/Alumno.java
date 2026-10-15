@@ -30,19 +30,18 @@ public class Alumno {
 				.filter(entry->entry.getValue()<5)
 				.count()<2;
 	}
-	private HashMap<Materia, Integer> getBoletin() {
-		return boletin;
-	}
+	
 	public List<Materia> getMateriasSuspensas(){
 		return boletin.entrySet().stream()
 				.filter(entry->entry.getValue()<5)
 				.map(entry-> entry.getKey())
 				.collect(Collectors.toList());
 	}
-
-	public boolean isMateriaAprobada(Materia materia) {
-		return boletin.get(materia)>4;
+	
+	public HashMap<Materia, Integer> getBoletin() {
+		return boletin;
 	}
+	
 	public boolean isEqualsNombre(String nombre) {
 		return getNombre().equals(nombre);
 	}

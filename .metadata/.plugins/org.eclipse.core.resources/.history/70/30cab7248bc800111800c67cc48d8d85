@@ -1,0 +1,16 @@
+package ejercicio06;
+
+import java.util.List;
+
+public class AlumnosRepository {
+	private List<Alumno> alumnos;
+
+	public AlumnosRepository() {
+		super();
+		alumnos = AlumnosOM.getAlumnos();
+	}
+	
+	public List<Alumno> findAlumnos(){
+		return alumnos;
+	}
+}
