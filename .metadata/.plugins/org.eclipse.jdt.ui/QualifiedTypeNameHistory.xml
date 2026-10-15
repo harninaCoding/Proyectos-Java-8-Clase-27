@@ -9,9 +9,13 @@
     <fullyQualifiedTypeName name="ejercicio04.Ejercicio02"/>
     <fullyQualifiedTypeName name="java.util.HashSet"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
-    <fullyQualifiedTypeName name="java.util.stream.Collectors"/>
     <fullyQualifiedTypeName name="ejercicio04.Ejercicio02bis"/>
     <fullyQualifiedTypeName name="ejercicio04.Vehiculo"/>
     <fullyQualifiedTypeName name="teoriainterfazfuncional00.Converter"/>
     <fullyQualifiedTypeName name="teoriainterfazfuncional00.Something"/>
+    <fullyQualifiedTypeName name="ejercicio06.AlumnosRepository"/>
+    <fullyQualifiedTypeName name="java.util.stream.Collectors"/>
+    <fullyQualifiedTypeName name="ejercicio06.AlumnoResponse"/>
+    <fullyQualifiedTypeName name="ejercicio06.Alumno"/>
+    <fullyQualifiedTypeName name="ejercicio06.Alumno2AlumnoResponseMapper"/>
 </qualifiedTypeNameHistroy>
