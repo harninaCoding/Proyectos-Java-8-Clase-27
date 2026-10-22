@@ -29,6 +29,8 @@ class PersonaTest {
 				 .collect(Collectors.groupingBy(Persona::getEdad,Collectors.groupingBy(Persona::getCategoria)));
 		 System.out.println();
 		 
+		 // Hallar la media de saldo por categoria
+		 // HAllar la media de saldo por edad y categoria, filtrar solo los que tengan un saldo mayor de 1000
 	}
 
 }
