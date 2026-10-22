@@ -20,6 +20,12 @@ public class Alumno {
 			boletin.put(materia, notas2.removeFirst());
 		});
 	}
+	
+	public Double getMedia() {
+		return boletin.values().stream()
+				.mapToInt(Integer::intValue)
+				.average().orElse(0f);
+	}
 
 	public String getNombre() {
 		return nombre;

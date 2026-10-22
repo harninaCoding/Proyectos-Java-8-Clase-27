@@ -16,5 +16,9 @@ public class AlumnosService {
 				.map(Alumno2AlumnoResponseMapper::convert)
 				.toList();
 	}
-	
+	 public Double getMediaGlobal() {
+		 return alumnosRepository.findAlumnos().stream()
+				 .mapToDouble(Alumno::getMedia)
+				 .average().getAsDouble();
+	 }
 }
