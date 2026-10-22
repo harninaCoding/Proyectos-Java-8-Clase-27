@@ -1,8 +1,0 @@
-package ejercicio06;
-
-public class Alumno2AlumnoResponseMapper {
-
-	public AlumnoResponse convert(Alumno alumno) {
-		return new AlumnoResponse(alumno.getNombre(), alumno.getMateriasSuspensas());
-	}
-}

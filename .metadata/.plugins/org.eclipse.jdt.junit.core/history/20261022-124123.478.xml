@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="AlumnosServiceTest" project="Ocheando27" tests="1" started="1" failures="0" errors="0" ignored="0">
-  <testsuite name="ejercicio06.AlumnosServiceTest" time="0.04" displayname="AlumnosServiceTest" uniqueid="[engine:junit-jupiter]/[class:ejercicio06.AlumnosServiceTest]">
-    <testcase name="testGetNombreAlumnosAprobadosYMateriasSuspensas" classname="ejercicio06.AlumnosServiceTest" time="0.04" displayname="testGetNombreAlumnosAprobadosYMateriasSuspensas()" uniqueid="[engine:junit-jupiter]/[class:ejercicio06.AlumnosServiceTest]/[method:testGetNombreAlumnosAprobadosYMateriasSuspensas()]"/>
-  </testsuite>
-</testrun>

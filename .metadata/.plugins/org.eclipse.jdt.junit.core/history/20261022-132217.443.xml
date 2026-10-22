@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="PersonaTest" project="Ocheando27" tests="1" started="1" failures="0" errors="0" ignored="0">
-  <testsuite name="groupingby07.PersonaTest" incomplete="true" displayname="PersonaTest" uniqueid="[engine:junit-jupiter]/[class:groupingby07.PersonaTest]">
-    <testcase name="test" classname="groupingby07.PersonaTest" incomplete="true" displayname="test()" uniqueid="[engine:junit-jupiter]/[class:groupingby07.PersonaTest]/[method:test()]"/>
-  </testsuite>
-</testrun>
