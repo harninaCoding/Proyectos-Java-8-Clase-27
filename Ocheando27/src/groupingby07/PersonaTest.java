@@ -30,7 +30,23 @@ class PersonaTest {
 		 System.out.println();
 		 
 		 // Hallar la media de saldo por categoria
+		 ConversorDos conversorDos=new ConversorDos();
+		 Map<Categoria, Double> collect6 = personas.stream()
+				 .collect(Collectors.groupingBy(
+						 Persona::getCategoria,
+						 Collectors.averagingDouble(Persona::getSaldo)));
 		 // HAllar la media de saldo por edad y categoria, filtrar solo los que tengan un saldo mayor de 1000
+		 
 	}
 
+	class Conversor {
+		public static int converter(Persona persona) {
+			return -1;
+		}
+	}
+	class ConversorDos {
+		public int converter(Persona persona) {
+			return -1;
+		}
+	}
 }
