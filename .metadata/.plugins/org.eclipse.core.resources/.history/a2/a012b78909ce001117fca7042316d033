@@ -1,5 +1,0 @@
-package groupingby07;
-
-public record Socio() {
-
-}
