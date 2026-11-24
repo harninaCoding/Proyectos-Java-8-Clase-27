@@ -27,7 +27,7 @@ public class Supermercado {
 		cliente.iniciarCompra(articulosRepositorio.getLista());
 		cliente.hacerCompra();
 		cliente.hacerCola(cola);
-		cajere.cobrarCliente(cliente);
+		cajere.cobrarCliente(cola.sacar());
 	}
 	
 	

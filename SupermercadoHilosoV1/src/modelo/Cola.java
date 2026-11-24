@@ -16,4 +16,8 @@ public class Cola {
 		cola.push(cliente);
 	}
 	
+	public Cliente sacar() {
+		return cola.poll();
+	}
+	
 }
