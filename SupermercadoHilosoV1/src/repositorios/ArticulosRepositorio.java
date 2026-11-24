@@ -12,5 +12,11 @@ public class ArticulosRepositorio {
 		super();
 		lista=om.getAll();
 	}
+
+	public List<Articulo> getLista() {
+		return lista;
+	}
+	
+	
 	
 }

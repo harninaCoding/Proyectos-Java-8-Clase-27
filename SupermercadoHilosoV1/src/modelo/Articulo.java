@@ -16,7 +16,7 @@ public class Articulo {
 		setPrecio(precio);
 	}
 
-	private float getPrecio() {
+	public float getPrecio() {
 		return precio;
 	}
 
@@ -25,11 +25,11 @@ public class Articulo {
 		this.precio = precio;
 	}
 
-	private int getStock() {
+	public int getStock() {
 		return stock;
 	}
 
-	private void setStock(int stock) {
+	public void setStock(int stock) {
 		assert stock > 0;
 		this.stock = stock;
 	}
@@ -59,22 +59,21 @@ public class Articulo {
 		return Objects.equals(barCode, other.barCode) && Objects.equals(nombre, other.nombre);
 	}
 
-	public boolean gestionarStock(int cantidadSolicitada) {
-		if (comprobarStock(cantidadSolicitada)) {
-			decrementaStock(cantidadSolicitada);
-			return true;
-		};
-		return false;
+	public int gestionarStock(int cantidadSolicitada) {
+		return comprobarStock(cantidadSolicitada);
 	}
 
 	private void decrementaStock(int cantidad) {
 		// TODO Auto-generated method stub
-
 	}
 
-	private boolean comprobarStock(int cantidad) {
-		// TODO Auto-generated method stub
-		return false;
+	public int comprobarStock(int cantidad) {
+		stock=stock-cantidad;
+		if(stock<0) {
+			cantidad+=stock;
+			stock=0;
+		}
+		return cantidad;
 	}
 
 }

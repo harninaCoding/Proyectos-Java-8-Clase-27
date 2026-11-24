@@ -13,6 +13,12 @@ public class Cajere {
 		this.lapso = lapso;
 	}
 
+	public void cobrarCliente(Cliente cliente) {
+		Cart carrito = cliente.getCarrito();
+		float totalizarCuenta = carrito.totalizarCuenta();
+		cliente.pagarCompra(totalizarCuenta);
+	}
+
 	private int getNumeroCaja() {
 		return numeroCaja;
 	}

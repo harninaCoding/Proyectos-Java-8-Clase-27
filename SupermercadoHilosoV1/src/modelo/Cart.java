@@ -11,12 +11,16 @@ public class Cart {
 		cesta = new HashMap<>();
 	}
 
-	public boolean agregar(Articulo articulo, int cantidad) {
-		if (!cesta.containsKey(articulo))
-			if (articulo.gestionarStock(cantidad)) {
-				cesta.put(articulo, cantidad);
-				return true;
+	public void agregar(Articulo articulo, int cantidad) {
+			int cantidadReal = articulo.gestionarStock(cantidad);
+			if (cantidadReal>0) {
+				cesta.put(articulo, cantidadReal);
 			}
-		return false;
+	}
+	
+	public float totalizarCuenta() {
+		return (float) cesta.entrySet().stream().mapToDouble(entry->{
+			return entry.getKey().getPrecio()*entry.getValue();
+		}).sum();
 	}
 }
